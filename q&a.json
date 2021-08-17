@@ -1,0 +1,163 @@
+{
+	"questionAnswer":[
+		{"tag": "greeting",
+			"patterns": ["Dzień dobry","Witam","Dobry wieczór"],
+			"responses": ["Dzień dobry", "Dobry wieczór"],
+			"context_set": ""
+		},
+		{"tag":"goodbye",
+		"patterns":["Dowidzenia","Dobranoc","Dziękuję"],
+		"responses":["Dowidzenia","Dobranoc","Cała przyjemność po mojej stronie"],
+		"context_set":""},
+
+		{"tag": "mentoringInfo",
+		"patterns":["Co to jest mentoring?", "Jak wygląda mentoring ?"],
+		"responses":["Najłatwiej porównać to do 3 przyziemnych rzeczy: opieka starszego i wyrozumiałego brata, regularny bieg w runmageddonie, GPS wyznaczający drogę po internecie.", "W skrócie mentoring w Akademii to: -aktualne materiały teoretyczne + skompikowane zadania praktyczne; -cotygodniowe calle z mentorem na code review Twoich rozwiązań; -komunikacja przez Slacka/call przez Zooma w razie problemów"],
+		"context_set":""
+	},
+	{"tag":"likeBrother",
+	"patterns":["Dlaczego mentoring jest jak 'opieka starszego i wyrozumiałego brata'?","Co to znaczy, że mentoring jest jak starszy brat?"],
+	"responses":["Mentor dostępny pod ręką, na slacku, prawie cały tydzień – jeśli masz jakieś wątpliwości lub problem z kodem – możesz śmiało do niego uderzać właśnie tam, zamiast bawić się z samodzielnymi próbami rozwiązania problemu. I dostaniesz konkretną odpowiedź, co uratuje Ci mnóstwo czasu. Zawsze stara się wyjaśnić zagadnienie aż zostanie zrozumiane – zamiast wykładu o niczym, dostaniesz od niego informacje, które są Ci niezbędne, by zrozumieć dany problem. W przystępny sposób, zrozumiałym słownictwem. Dogadacie się. Pokaże Ci jak coś zrobić lepiej i w bardziej poprawny sposób – zobaczysz, jak pracować sprawniej, skuteczniej i efektywniej. Odkryjesz inne podejścia na napisanie kodu i to wszystko bez utraty standardów i jakości."],
+	"context_set":""},
+
+	{"tag":"likeRun",
+	"patterns":["Dlaczego mentoring jest jak “regularny bieg w runmageddonie”?","Mentoring jak bieg w runmageddonie?"],
+	"responses":["Ćwiczenia praktyczne przy których się spocisz – pamiętaj, “im więcej potu na treningu, tym mniej krwi w boju”. Dostaniesz wymagające zadania, w które będzie trzeba włożyć dużo wysiłku.  Zmęczysz się, ale nabierzesz szacunku i pokory do nauki. Przebiegnięcie każdego etapu buduje twoją wytrzymałość w danej części nauki –  będziesz w stanie robić coraz trudniejsze zadania. Nie będziesz już chciał wrzucać zadań na grupy by ktoś je zrobił za Ciebie, bo sam nauczysz się mądrze je rozwiązywać. Mimo ogromnego wysiłku będziesz zadowolony, że skutecznie pokonujesz kolejne etapy – zapomnisz o poczuciu braku rozwoju,a na nudę i frustrację po prostu braknie Ci czasu. Towarzyszyć Ci będzie satysfakcja i będziesz chciał więcej. W efekcie, patrząc na swój dawny kod, sam będziesz odnajdywać i poprawiać błędy."],
+	"context_set":""},
+
+	{"tag":"likeGPS",
+	"patterns":["Dlaczego mentoring jest jak “GPS wyznaczający drogę po internecie”?"],
+	"responses":["Internet to śmietnik z nadmiarem informacji i 90% rzeczy nie warto się uczyć z różnych powodów – wiele “informacji” to małowartościowe lub już nieaktualne teksty. Nieumiejętny dobór materiałów może skutkować nie tylko tym, że niczego się nie nauczysz. Możesz nabyć w ten sposób wiele złych programistycznych nawyków i robić wiele błędów. Dostajesz do nauki tylko wyselekcjonowane, sprawdzone i jakościowe źródła wiedzy – samo mięso. Będziesz mieć dokładnie to, czego potrzebujesz i zamiast tracić czas na szukanie – poświęcisz go na zadania, naukę i pracę nad kodem. GPS sam aktualizuje trasę przejazdu jeśli rynek się zmienia – aktualizacje materiałów do nauki odbywają się co kwartał. Dzięki temu są aktualne, w przeciwieństwie do wielu artykułów internetowych, na które możesz się natknąć, szukając informacji."],
+	"context_set":""},
+
+		{"tag": "forWho",
+		"patterns":["Dla kogo jest mentoring w Akademii?","Kto może skorzystać z mentoringu?"],
+		"responses":["Mentoring warto rozważyć jeśli towarzyszy Ci przynajmniej jedno z poniższych odczuć: -zauważyłeś, że brak Ci wyzwań, które pomogą w Twoim rozwoju; -chciałbyś nauczyć się dobrych praktyk pisania kodu; -chciałbyś zbudować portfolio, które wyróżni Cię na tle innych kandydatów; -szukasz kogoś, kto ugruntuje Twoją wiedzę, zdobywaną na innych kursach/bootcampach; -szukasz kogoś, kto zmotywuje Cię do regularnego rozwoju"],
+		"context_set":""
+	},
+
+	{"tag":"whenOk",
+	"patterns":["Kiedy mentoring jest dla mnie?","Kiedy mentoring jest dobrym pomysłem?"],
+	"responses":["chcesz mieć możliwość rozwoju w swoim własnym tempie, uczyć się w przyjaznym środowisku osób podobnych do Ciebie lubisz wymagające zadania i nauczycieli, chcesz rozwijać się szybciej i bardziej kompleksowo niż inni"],
+	"context_set":""},
+
+	{"tag":"whenNo",
+		"patterns":["Kiedy mentoring nie jest dla mnie?","Kiedy mentoring nie jest dobrym pomysłem?"],
+		"responses":["kiedy dopiero wchodzisz do IT i zaczynasz się uczyć, nie umiesz uczyć się samemu i potrzebujesz być prowadzony za rączkę, nie masz cierpliwości, aby robić wymagające zadania i szybko się poddajesz w etapie życia, w którym jesteś trudno o regularność nauki."],
+		"context_set":""},	
+
+	{"tag":"howLong",
+	"patterns":["Jak długo trwa mentoring?","Ile trwa nauka w Akademii?"],
+	"responses":["Czas nauki to bardzo indywidualny parametr – nauka pod okiem mentora trwa aż dojdziesz do wyznaczonego przez siebie celu – pierwsza praca, poprawienie portfolio, podwyżka, douczenie się dobrych praktyk","Długość nauki zależy od kilku czynników: -tempa przyswajania wiedzy przez ucznia; -regularności pracy ucznia; -specjalizacji, która sobie wybrał. Zakładając przypadek, że uczeń ma ok 2h dziennie na naukę, rozwija się bezproblemowo i chłonie nową wiedzę, to przejście wszystkich etapów nauki na 2021 na ścieżce Frontendowej zajmuje ok 9-11msc a na ścieżce Backendowej ok 11-13msc"],
+	"context_set":""},
+	
+
+	{"tag":"hoursPerWeek",
+			"patterns":["Ile godzin tygodniowo należy wygospodarować na naukę?","Ile godzin należy przeznaczyć na naukę?"],
+			"responses":["Około 6-10h w tygodniu, w dowolnej porze. Akademia jest online między 12 a 23, więc studenci pracują samodzielnie, tak, jak im pasuje. W tym przedziale czasowym muszą też zdzwonić się na code review i zajęcia."],
+			"context_set":""},
+
+
+	
+	{"tag":"level",
+	"patterns":["Jaki muszę mieć poziom, aby przystąpić do Akademii?","Co muszę umieć?"],
+	"responses":["-nie powinieneś „łamać sobie rąk” podczas pisania kodu w JS; -masz już trochę kodu na githubie, który zrealizowałeś"],
+	"context_set":""},
+	
+	{"tag":"program",
+	"patterns":["Jak wygląda program nauczania?","Jaki jest program nauczania?"],
+	"responses":["Rozwój w Akademii w ogromnym skrócie jest podzielony na 3 ogólne etapy: Etap 1 – Fundamenty – uczysz się realizowania średniozaawansowanej logiki wg zasad Clean Code i prostych testów w danym języku. Przerabiasz różne problemy, które możesz napotkać podczas pracy jako Junior Dev Etap 2 jest podzielony na dwie części: a – Specjalizacja – gdzie uczysz się pracy z bibliotekami w swojej specjalizacji. Jeśli wybierasz FrontEnd JS jest to biblioteka React, w przypadku Backend JS jest to Express i Next b – Portfolio – stosujesz zdobytą w etapie 2a wiedzę na 2 średniozaawansowanych projektach, które budujesz jako swojego portfolio. Średnio realizacja każdego z projektów zajmie Ci ok 2-3 msc Etap 3 -Rekrutacja – uczysz się jak dopasować swoje CV oraz Githuba, aby było czytelne i zrozumiałe dla potencjalnego rekrutera. Dostajesz też kilka wskazówek jak rozmawiać na rekrutacji oraz jak wyłapywać toksycznych pracodawców. Podczas tego etapu możesz też dostać ofertę pracy od mentora"],
+	"context_set":""},
+	
+	{"tag":"learning",
+		"patterns":["Jak wygląda nauka?","Jak będę się uczyć?"],
+		"responses":["Z uwagi na to, że programowania każdy musi nauczyć się sam, to nauka głównie polega na samodzielnej realizacji zadań oraz zajęciach z mentorem, w celu ocenienia wypracowanych rozwiązań. W razie pojawienia się jakichkolwiek problemów można zawsze się zdzwonić na krótkiego calla i wszystko wyjaśnić"],
+		"context_set":""},
+	
+	{"tag":"frontend",
+			"patterns":["Jakich technologii mogę nauczyć się w 2021 na ścieżce front-end z JS?","Czego nauczę się na ścieżce front-end?"],
+			"responses":["-JS + TS wg zasad Clean Code; -React (+ wszystko co aktualnie jest w React), Redux, Jest, react-testing-library + inne; -Next (SSR rendering)"],
+			"context_set":""},
+	{"tag":"backend",
+			"patterns":["Jakich technologii mogę nauczyć się w 2021 na ścieżce back-end z JS?","Czego nauczę się na ścieżce back-end?"],
+				"responses":["-JS + TS wg zasad Clean Code; -Express, Next, Mongo, Postgres, Graphql + inne; -Docker i prosty deployment pod AWS"],
+				"context_set":""},
+
+	{"tag":"codes",
+					"patterns":["Czy są jakieś rabaty dla studentów lub „za dobrą naukę”?","Czy są zniżki dla studentów?","Czy można otrzymać zniżkę za 'dobrą naukę'?"],
+					"responses":["Zawsze masz -10% rabatu, jeśli jesteś studentem. Przyznaję też rabaty za dobrą naukę – jeśli w 3 msc przerobisz cały etap Fundamenty to dostajesz rabat „za dobrą naukę” -30%"],
+					"context_set":""},
+
+	{"tag":"cost",
+	"patterns":["Ile to kosztuje?","Jak to wygląda finansowo?","Ile kosztuje nauka?","Ile wynosi cena za naukę?"],
+	"responses":["Miesięczne czesne za naukę jest uzależnione od tego ile Ty masz dziennie czasu na naukę. Czy to jest bardziej 2h dziennie czy raczej 4h dziennie. Im więcej masz czasu, tym więcej wymagasz uwagi mentora. Średnio w przypadku ok 2h dziennie na naukę jest to koszt 1000zł/msc, w przypadku 4h dziennie jest to koszt 1400zł/msc. Czesne płaci się za przyszły miesiąc", "Pierwszy moduł fundamentals trwa ok 2-4 msc w zależności od studenta i kosztuje 1000 zł/msc. Drugi moduł – specjalizacja – trwa ok 3-6 msc i kosztuje 700 zł/msc, bo wtedy są dłuższe zadania i potrzeba mniej uwagi mentora. Średnio mentoring kosztuje ludzi od 4 do 6 tys."],
+	"context_set":""},
+
+	{"tag":"finance",
+	"patterns":["Czy można udać się do Urzędu Pracy będąc bezrobotnym, aby sfinansować naukę w Akademii?","Czy można sfinansować naukę z Urzędu Pracy?", "Czy można otrzymać dofinansowanie?"],
+	"responses":["Tak, firma widnieje w Rejestrze Instytucji Szkoleniowych i można sfinasować średnio od 4 do 6 miesięcy nauki przez urząd, ale to trudniejsza procedura i jest bardzo zależna od widzimisie Twojego Urzędu Pracy"],
+	"context_set":""
+},
+{"tag":"invoice",
+	"patterns":["Czy można otrzymać faktury za naukę?"],
+	"responses":["Tak"],
+	"context_set":""
+},
+{"tag":"classes",
+	"patterns":["Co ile są zajecia z mentorem i ile one trwają?","Jak często odbywają się zajęcia z mentorem?","Jak długo trwają zajęcia z mentorem?","Ile trwają zajęcia?"],
+	"responses":["Z uwagi na indywidualne podejście do każdego ucznia nie ma „limitu” spotkań z mentorem. Calle odbywają się wtedy kiedy uczeń tego potrzebuje – czasem są one dłuższe, bo jest do omówienia więcej materiału, a czasem są one krótsze, bo jest kwestia doprecyzowania kilku rzeczy. W uśrednionym przypadku w ostatnim roku uczniowie mieli ok 7h zajęć z mentorem miesiecznie"],
+	"context_set":""
+},
+{"tag":"pause",
+	"patterns":["Czy można przerwać/zapauzować naukę?"],
+	"responses":["Tak, wystarczy ok 2 tyg przed rozpoczęciem kolejnego miesiąca poinformować na slacku, że nauka w danym miesiącu nie będzie kontynuowana, bo … (jakiś racjonalny powód). I wtedy bezproblemowo pauzuję/przerywam naukę, a student zatrzymuje wszystkie materiały, aby nie blokować mu samodzielnej nauki"],
+	"context_set":""
+},
+{"tag":"firstJob",
+	"patterns":["Po jakim czasie można zdobyć pierwszę pracę?","Jak szybko można znaleźć pierwszą pracę?"],
+	"responses":["Są studenci, którzy po pół roku w Akademii łapią pierwszą pracę. Warto wiedzieć, że pod koniec roku IT nie zatrudnia i ciężko wtedy coś znaleźć. Listopad i grudzień to martwe miesiące."],
+	"context_set":""
+},
+{"tag":"props",
+	"patterns":["Jakich języków warto się uczyć?","Czego warto się uczyć?"],
+	"responses":["Dobra opcja to typescript backend + devops + aws. Devops to specjalizacja w IT – dla osoby która „ogarnia serwery”. Typescript zawsze jest lepszy niż javascript jeśli chodzi o rynek. A znajomość AWS i współpraca ze środowiskiem chmurowym to duży plus w CV."],
+	"context_set":""
+},
+{"tag":"thanBootcamp",
+	"patterns":["Akademia jest lepsza od bootcampu?","Czy to jest lepszy wybór od bootcampu?"],
+	"responses":["My naprawiamy ludzi po bootcampach. W 2021 pójście na bootcamp jest równoznaczne z przelewaniem pieniędzy na głupoty. Moi studenci podczas roku nauki nie wydają tyle, ile na bootcamp się wydaje. A bootcamp to 3-4 stracone miesiące."],
+	"context_set":""
+},
+{"tag":"start",
+	"patterns":["Kiedy mogę zacząć?","Kiedy zaczynają się zajęcia?"],
+	"responses":["Nowych studentów przyjmujemy 1 lub 15 dnia miesiąca."],
+	"context_set":""
+},
+
+{"tag":"modules",
+	"patterns":["Jak wyglądają moduły?", "Jakie są moduły?"],
+	"responses":["Szczegółowy plan można znaleźć tutaj: https://academy.localhost-group.com/#roadmaps."],
+	"context_set":""
+},
+{"tag":"willBe",
+	"patterns":["Kiedy wiadomo, że ktoś nadaje się na programistę?", "Czy nadam się na programistę?"],
+	"responses":["Zwykle wyczuwam to po około 1-2 msc współpracy. Jak będziesz „nie do IT” to powiem Ci to od razu. To widać po tym, czy ludzie myślą w odpowiedni sposób. Zadania są trudne i musisz móc je rozwiązywać. Dla Ciebie są ciężkie, ale w przypadku IT to banał. Tak układałem zadania, aby sprawdzać kilka sektorów myślenia: kolejność logiczna procesu, myślenie abstrakcyjne, myślenie w danych – to wychodzi bardzo szybko."],
+	"context_set":""
+},
+{"tag":"getJob",
+	"patterns":["Na pewno bez problemu dostanę pracę po Akademii?","Na pewno dostanę po tym pracę?"],
+	"responses":["Po Akademii masz doświadczenie w IT. Mam bardzo dobrą formatkę do CV. Doświadczenie komercyjne możesz u mnie sobie wytworzyć robiąc dla mnie zadania i taski. Bo poza Akademią mam też software house który specjalizuje się w e-commerce. Także jest opcja doświadczenia komercyjnego. Ode mnie nie idziesz bez doświadczenia i przygotowanego CV w świat."],
+	"context_set":""
+},
+{"tag":"betterChoice",
+	"patterns":["Lepszy front end czy back?","Lepiej wybrać front czy back end"],
+	"responses":["Front i back to tylko narzędzia. Programista jest od rozwiązywania problemów za pomocą technologii – czy to back czy front – zależy od problemu. Jak trzeba rozwiązywać problemy, na przykład automatyzacji sprzedaży, to front jest tak samo ważny jak i back. A na przykład w automatyzacji procesu głównie back się liczy."],
+	"context_set":""
+},
+{"tag":"prepare",
+	"patterns":["Czy należy jakoś się przygotować tuż przed rozpoczęciem nauki?","Czy muszę się jakoś przygotować do zajęć?"],
+	"responses":["Nie trzeba, wszystko ogarniemy na zajęciach"],
+	"context_set":""
+}
+]
+}
