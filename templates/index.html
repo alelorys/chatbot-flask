@@ -7,28 +7,44 @@
 <link rel="stylesheet" href="static/style.css">
 <title>Bot</title>
 <style>
-#window{
-	width: 300px;
-	background-color: #F5F7FA;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 250px;
-	float:right;
-	z-index:1;
+#open-chat {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.window{
+	height: 410px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
 }
 
-.btn{
+#close-chat{
 	background-color: #1301A3;
   color: white;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  width: 300px;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
 }
-.btn:hover {
+
+.chat-container{
+  width: 300px;
+  height: 250px;
+  background-color: white;
+}
+#close-chat:hover {
   background-color: #555;
 }
 
@@ -104,8 +120,10 @@ input[type=text]{
 </style>
 </head>
 <body>
-<div id="window">
-<button type="button" class="btn">Czat</button>
+<button id="open-chat" onclick="openChat()">Czat</button>
+<div class="window" id="chatForm">
+<form class="chat-container">
+<button id="close-chat" onclick="closeChat()">Czat</button>
 <div id="box">
 <div id="chatLog">
 
@@ -116,133 +134,11 @@ input[type=text]{
 	<input type="text" id="userMes" name="msg"/>
 	<input type="submit" value=">" id="buttonInput"/>
 </div>
+</form>
 </div>
-Ale co tak naprawdę znaczy mentoring wg rozumienia zasad Akademii Localhost?<br>
-Najłatwiej porównać to do 3 przyziemnych rzeczy:<br><br>
 
-opieka starszego i wyrozumiałego brata<br>
-regularny bieg w runmageddonie<br>
-GPS wyznaczający drogę po internecie<br><br>
-Dlaczego mentoring jest jak “opieka starszego i wyrozumiałego brata”?<br>
-Mentor dostępny pod ręką, na slacku, prawie cały tydzień – jeśli masz jakieś wątpliwości lub problem z kodem – możesz śmiało do niego uderzać właśnie tam, zamiast bawić się z samodzielnymi próbami rozwiązania problemu. I dostaniesz konkretną odpowiedź, co uratuje Ci mnóstwo czasu.<br>
-Zawsze stara się wyjaśnić zagadnienie aż zostanie zrozumiane – zamiast wykładu o niczym, dostaniesz od niego informacje, które są Ci niezbędne, by zrozumieć dany problem. W przystępny sposób, zrozumiałym słownictwem. Dogadacie się.<br>
-Pokaże Ci jak coś zrobić lepiej i w bardziej poprawny sposób – zobaczysz, jak pracować sprawniej, skuteczniej i efektywniej. Odkryjesz inne podejścia na napisanie kodu i to wszystko bez utraty standardów i jakości. <br><br>
-Dlaczego mentoring jest jak “regularny bieg w runmageddonie”?<br>
-Ćwiczenia praktyczne przy których się spocisz – pamiętaj, “im więcej potu na treningu, tym mniej krwi w boju”. Dostaniesz wymagające zadania, w które będzie trzeba włożyć dużo wysiłku.  Zmęczysz się, ale nabierzesz szacunku i pokory do nauki.<br>
-Przebiegnięcie każdego etapu buduje twoją wytrzymałość w danej części nauki –  będziesz w stanie robić coraz trudniejsze zadania. Nie będziesz już chciał wrzucać zadań na grupy by ktoś je zrobił za Ciebie, bo sam nauczysz się mądrze je rozwiązywać.<br>
-Mimo ogromnego wysiłku będziesz zadowolony, że skutecznie pokonujesz kolejne etapy – zapomnisz o poczuciu braku rozwoju,a na nudę i frustrację po prostu braknie Ci czasu. Towarzyszyć Ci będzie satysfakcja i będziesz chciał więcej. W efekcie, patrząc na swój dawny kod, sam będziesz odnajdywać i poprawiać błędy.<br><br>
-Dlaczego mentoring jest jak “GPS wyznaczający drogę po internecie”?<br>
-Internet to śmietnik z nadmiarem informacji i 90% rzeczy nie warto się uczyć z różnych powodów – wiele “informacji” to małowartościowe lub już nieaktualne teksty. Nieumiejętny dobór materiałów może skutkować nie tylko tym, że niczego się nie nauczysz. Możesz nabyć w ten sposób wiele złych programistycznych nawyków i robić wiele błędów.<br>
-Dostajesz do nauki tylko wyselekcjonowane, sprawdzone i jakościowe źródła wiedzy – samo mięso. Będziesz mieć dokładnie to, czego potrzebujesz i zamiast tracić czas na szukanie – poświęcisz go na zadania, naukę i pracę nad kodem.<br>
-GPS sam aktualizuje trasę przejazdu jeśli rynek się zmienia – aktualizacje materiałów do nauki odbywają się co kwartał. Dzięki temu są aktualne, w przeciwieństwie do wielu artykułów internetowych, na które możesz się natknąć, szukając informacji. <br>
-Dobra, skoro już dostrzegłeś analogię czym jest mentoring, to teraz warto sprawdzić czy mentoring w Akademii jest już dla Ciebie czy jeszcze nie<br><br>
+<script type="text/javascript" src="static/chat.js">
 
-Kiedy mentoring nie jest dla Ciebie?<br>
-kiedy dopiero wchodzisz do IT i zaczynasz się uczyć<br>
-nie umiesz uczyć się samemu i potrzebujesz być prowadzony za rączkę<br>
-nie masz cierpliwości, aby robić wymagające zadania i szybko się poddajesz<br>
-w etapie życia, w którym jesteś trudno o regularność nauki<br><br>
-Kiedy mentoring jest dla Ciebie?<br>
-chcesz mieć możliwość rozwoju w swoim własnym tempie<br>
-uczyć się w przyjaznym środowisku osób podobnych do Ciebie<br>
-lubisz wymagające zadania i nauczycieli<br>
-chcesz rozwijać się szybciej i bardziej kompleksowo niż inni<br>
-Jak długo trwa mentoring?<br>
-Czas nauki to bardzo indywidualny parametr – nauka pod okiem mentora trwa aż dojdziesz do wyznaczonego przez siebie celu – pierwsza praca, poprawienie portfolio, podwyżka, douczenie się dobrych praktyk<br><br>
-
-Dla kogo jest mentoring w Akademii ?<br>
-Mentoring warto rozważyć jeśli towarzyszy Ci przynajmniej jedno z poniższych odczuć:<br><br>
-
-zauważyłeś, że brak Ci wyzwań, które pomogą w Twoim rozwoju<br>
-chciałbyś nauczyć się dobrych praktyk pisania kodu<br>
-chciałbyś zbudować portfolio, które wyróżni Cię na tle innych kandydatów<br>
-szukasz kogoś, kto ugruntuje Twoją wiedzę, zdobywaną na innych kursach/bootcampach<br>
-szukasz kogoś, kto zmotywuje Cię do regularnego rozwoju<br><br>
-
-Jaki musisz mieć poziom, aby przystąpić do Akademii ?<br>
-nie powinieneś „łamać sobie rąk” podczas pisania kodu w JS<br>
-masz już trochę kodu na githubie, który zrealizowałeś<br><br>
-
-Jak wygląda mentoring ?<br>
-W skrócie mentoring w Akademii to:<br><br>
-
-aktualne materiały teoretyczne + skompikowane zadania praktyczne<br>
-cotygodniowe calle z mentorem na code review Twoich rozwiązań<br>
-komunikacja przez Slacka/call przez Zooma w razie problemów<br><br>
-
-Jak wygląda program nauczania ?<br>
-Rozwój w Akademii w ogromnym skrócie jest podzielony na 3 ogólne etapy:<br><br>
-
-Etap 1 – Fundamenty – uczysz się realizowania średniozaawansowanej logiki wg zasad Clean Code i prostych testów w danym języku. Przerabiasz różne problemy, które możesz napotkać podczas pracy jako Junior Dev<br>
-Etap 2a – Specjalizacja – gdzie uczysz się pracy z bibliotekami w swojej specjalizacji. Jeśli wybierasz FrontEnd JS jest to biblioteka React, w przypadku Backend JS jest to Express i Next<br>
-Etap 2b – Portfolio – stosujesz zdobytą w etapie 2a wiedzę na 2 średniozaawansowanych projektach, które budujesz jako swojego portfolio. Średnio realizacja każdego z projektów zajmie Ci ok 2-3 msc<br>
-Etap 3 – Rekrutacja – uczysz się jak dopasować swoje CV oraz Githuba, aby było czytelne i zrozumiałe dla potencjalnego rekrutera. Dostajesz też kilka wskazówek jak rozmawiać na rekrutacji oraz jak wyłapywać toksycznych pracodawców. Podczas tego etapu możesz też dostać ofertę pracy od mentora<br><br>
-
-Jak wygląda nauka ?<br>
-Z uwagi na to, że programowania każdy musi nauczyć się sam, to nauka głównie polega na samodzielnej realizacji zadań oraz zajęciach z mentorem, w celu ocenienia wypracowanych rozwiązań. W razie pojawienia się jakichkolwiek problemów można zawsze się zdzwonić na krótkiego calla i wszystko wyjaśnić.<br><br>
-
-Ile trwa nauka w Akademii ?<br>
-Długość nauki zależy od kilku czynników:<br>
-
-tempa przyswajania wiedzy przez ucznia<br>
-regularności pracy ucznia<br>
-specjalizacji, która sobie wybrał<br>
-Zakładając przypadek, że uczeń ma ok 2h dziennie na naukę, rozwija się bezproblemowo i chłonie nową wiedzę, to przejście wszystkich etapów nauki na 2021 na ścieżce Frontendowej zajmuje ok 9-11msc a na ścieżce Backendowej ok 11-13msc.<br><br>
-
-Czy są jakieś rabaty dla studentów lub „za dobrą naukę” ?<br>
-Zawsze masz -10% rabatu, jeśli jesteś studentem. Przyznaję też rabaty za dobrą naukę – jeśli w 3 msc przerobisz cały etap Fundamenty to dostajesz rabat „za dobrą naukę” -30%.<br><br>
-
-Jak wyglądają kwestie finansowe ?<br>
-Miesięczne czesne za naukę jest uzależnione od tego ile Ty masz dziennie czasu na naukę. Czy to jest bardziej 2h dziennie czy raczej 4h dziennie. Im więcej masz czasu, tym więcej wymagasz uwagi mentora. Średnio w przypadku ok 2h dziennie na naukę jest to koszt 1000zł/msc, w przypadku 4h dziennie jest to koszt 1400zł/msc. Czesne płaci się za przyszły miesiąc.<br><br>
-
-Jak wyglądają kwestie finansowe ?<br>
-Miesięczne czesne za naukę jest uzależnione od tego ile Ty masz dziennie czasu na naukę. Czy to jest bardziej 2h dziennie czy raczej 4h dziennie. Im więcej masz czasu, tym więcej wymagasz uwagi mentora. Średnio w przypadku ok 2h dziennie na naukę jest to koszt 1000zł/msc, w przypadku 4h dziennie jest to koszt 1400zł/msc. Czesne płaci się za przyszły miesiąc.<br><br>
-
-Czy można otrzymać faktury za naukę?<br>
-Tak.<br><br>
-
-Co ile są zajecia z mentorem i ile one trwają?<br>
-Z uwagi na indywidualne podejście do każdego ucznia nie ma „limitu” spotkań z mentorem. Calle odbywają się wtedy kiedy uczeń tego potrzebuje – czasem są one dłuższe, bo jest do omówienia więcej materiału, a czasem są one krótsze, bo jest kwestia doprecyzowania kilku rzeczy. W uśrednionym przypadku w ostatnim roku uczniowie mieli ok 7h zajęć z mentorem miesiecznie.<br><br>
-
-
-<script >
-
-$(document).ready(function(){
-
-  $(".btn").click(function(){
-    $("#box").toggle();
-  });
-  
-});
-
-
-function getBotResponse(){
-var date = new Date();
-var hour = date.getHours();
-var min = date.getMinutes();
-min = "0"+min;
-var fullTime = hour+":"+min.slice(-2);
-var rawText = $("#userMes").val();
-var userHtml = '<div class="userMsg"><span class="name_coresponder">Użytkownik</span><p class = "userText">' + rawText + '</p><span class = "date">'+fullTime+'</span></div><div class="clear"></div>';
-$("#userMes").val("");
-$("#chatLog").append(userHtml);
-document.getElementById('userInput').scrollIntoView({block:'start',behaviour:'smooth'});
-
-$.get("/get", {msg:rawText }).done(function(answer) {
-var botHtml = '<div class="botRespond"><span class="name_coresponder">Krzysztof</span><p class ="botText">' + answer + '</p><span class = "date">'+fullTime+'</span></div><div class="clear"></div>';
-$("#chatLog").append(botHtml);
-document.getElementById('userInput').scrollIntoView({block : 'start',behaviour:'smooth'});
-});
-}
-
-$("#userMes").keypress(function(e) {
-if(e.which == 13) {
-getBotResponse();
-}
-});
-
-$("#buttonInput").click(function() {
-getBotResponse();
-})</script>
+</script>
 </body>
 </html>
