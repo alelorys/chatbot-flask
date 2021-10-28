@@ -1,13 +1,13 @@
 {
 	"questionAnswer":[
 		{"tag": "greeting",
-			"patterns": ["Dzień dobry","Witam","Dobry wieczór"],
-			"responses": ["Dzień dobry", "Dobry wieczór"],
+			"patterns": ["Dzień dobry","Witam","Dobry wieczór","Cześć", "Hej"],
+			"responses": ["Dzień dobry", "Dobry wieczór", "Witam", "Siemka"],
 			"context_set": ""
 		},
 		{"tag":"goodbye",
-		"patterns":["Dowidzenia","Dobranoc","Dziękuję"],
-		"responses":["Dowidzenia","Dobranoc","Cała przyjemność po mojej stronie"],
+		"patterns":["Dowidzenia","Dobranoc","Dziękuję","Pa pa", "Dozobaczenia"],
+		"responses":["Dowidzenia","Dobranoc","Cała przyjemność po mojej stronie", "Zapraszam ponownie"],
 		"context_set":""},
 
 		{"tag": "mentoringInfo",
@@ -32,7 +32,7 @@
 
 		{"tag": "forWho",
 		"patterns":["Dla kogo jest mentoring w Akademii?","Kto może skorzystać z mentoringu?"],
-		"responses":["Mentoring warto rozważyć jeśli towarzyszy Ci przynajmniej jedno z poniższych odczuć: -zauważyłeś, że brak Ci wyzwań, które pomogą w Twoim rozwoju; -chciałbyś nauczyć się dobrych praktyk pisania kodu; -chciałbyś zbudować portfolio, które wyróżni Cię na tle innych kandydatów; -szukasz kogoś, kto ugruntuje Twoją wiedzę, zdobywaną na innych kursach/bootcampach; -szukasz kogoś, kto zmotywuje Cię do regularnego rozwoju"],
+		"responses":["Mentoring warto rozważyć jeśli towarzyszy Ci przynajmniej jedno z poniższych odczuć: -zauważyłeś, że brak Ci wyzwań, które pomogą w Twoim rozwoju; -chciałbyś nauczyć się dobrych praktyk pisania kodu; -chciałbyś zbudować portfolio, które wyróżni Cię na tle innych kandydatów; -szukasz kogoś, kto ugruntuje Twoją wiedzę, zdobywaną na innych kursach/bootcampach; -szukasz kogoś, kto zmotywuje Cię do regularnego rozwoju","Akademia nie jest dla osób, które dopiero zaczynają uczyć się programowania!!!"],
 		"context_set":""
 	},
 
@@ -47,7 +47,7 @@
 		"context_set":""},	
 
 	{"tag":"howLong",
-	"patterns":["Jak długo trwa mentoring?","Ile trwa nauka w Akademii?"],
+	"patterns":["Jak długo trwa mentoring?","Ile trwa nauka w Akademii?", "Ile czasu zajmuje nauka programowania?"],
 	"responses":["Czas nauki to bardzo indywidualny parametr – nauka pod okiem mentora trwa aż dojdziesz do wyznaczonego przez siebie celu – pierwsza praca, poprawienie portfolio, podwyżka, douczenie się dobrych praktyk","Długość nauki zależy od kilku czynników: -tempa przyswajania wiedzy przez ucznia; -regularności pracy ucznia; -specjalizacji, która sobie wybrał. Zakładając przypadek, że uczeń ma ok 2h dziennie na naukę, rozwija się bezproblemowo i chłonie nową wiedzę, to przejście wszystkich etapów nauki na 2021 na ścieżce Frontendowej zajmuje ok 9-11msc a na ścieżce Backendowej ok 11-13msc"],
 	"context_set":""},
 	
@@ -60,7 +60,7 @@
 
 	
 	{"tag":"level",
-	"patterns":["Jaki muszę mieć poziom, aby przystąpić do Akademii?","Co muszę umieć?"],
+	"patterns":["Jaki muszę mieć poziom, aby przystąpić do Akademii?","Co muszę umieć?", "Co muszę umieć, aby dołączyć do akademii?"],
 	"responses":["-nie powinieneś „łamać sobie rąk” podczas pisania kodu w JS; -masz już trochę kodu na githubie, który zrealizowałeś"],
 	"context_set":""},
 	
@@ -83,7 +83,7 @@
 				"responses":["-JS + TS wg zasad Clean Code; -Express, Next, Mongo, Postgres, Graphql + inne; -Docker i prosty deployment pod AWS"],
 				"context_set":""},
 
-	{"tag":"codes",
+	{"tag":"promo",
 					"patterns":["Czy są jakieś rabaty dla studentów lub „za dobrą naukę”?","Czy są zniżki dla studentów?","Czy można otrzymać zniżkę za 'dobrą naukę'?"],
 					"responses":["Zawsze masz -10% rabatu, jeśli jesteś studentem. Przyznaję też rabaty za dobrą naukę – jeśli w 3 msc przerobisz cały etap Fundamenty to dostajesz rabat „za dobrą naukę” -30%"],
 					"context_set":""},
@@ -99,7 +99,7 @@
 	"context_set":""
 },
 {"tag":"invoice",
-	"patterns":["Czy można otrzymać faktury za naukę?"],
+	"patterns":["Czy można otrzymać faktury za naukę?", "Czy dostanę fakturę?", "Mogę otrzymać fakturę?"],
 	"responses":["Tak"],
 	"context_set":""
 },
@@ -119,7 +119,7 @@
 	"context_set":""
 },
 {"tag":"props",
-	"patterns":["Jakich języków warto się uczyć?","Czego warto się uczyć?"],
+	"patterns":["Jakich języków warto się uczyć?","Czego warto się uczyć?","Jaki język programowania wybrać na początek?"],
 	"responses":["Dobra opcja to typescript backend + devops + aws. Devops to specjalizacja w IT – dla osoby która „ogarnia serwery”. Typescript zawsze jest lepszy niż javascript jeśli chodzi o rynek. A znajomość AWS i współpraca ze środowiskiem chmurowym to duży plus w CV."],
 	"context_set":""
 },
@@ -140,23 +140,298 @@
 	"context_set":""
 },
 {"tag":"willBe",
-	"patterns":["Kiedy wiadomo, że ktoś nadaje się na programistę?", "Czy nadam się na programistę?"],
+	"patterns":["Kiedy wiadomo, że ktoś nadaje się na programistę?", "Czy nadam się na programistę?", "Skąd wiedzieć, czy programowanie jest dla mnie?", "Czy każdy nadaje się na programistę?"],
 	"responses":["Zwykle wyczuwam to po około 1-2 msc współpracy. Jak będziesz „nie do IT” to powiem Ci to od razu. To widać po tym, czy ludzie myślą w odpowiedni sposób. Zadania są trudne i musisz móc je rozwiązywać. Dla Ciebie są ciężkie, ale w przypadku IT to banał. Tak układałem zadania, aby sprawdzać kilka sektorów myślenia: kolejność logiczna procesu, myślenie abstrakcyjne, myślenie w danych – to wychodzi bardzo szybko."],
 	"context_set":""
 },
 {"tag":"getJob",
-	"patterns":["Na pewno bez problemu dostanę pracę po Akademii?","Na pewno dostanę po tym pracę?"],
+	"patterns":["Na pewno bez problemu dostanę pracę po Akademii?","Na pewno dostanę po tym pracę?", "Czy po akademii mogę starać się o pierwszą pracę?", "Znajdę pierwszą pracę w IT po akademii?"],
 	"responses":["Po Akademii masz doświadczenie w IT. Mam bardzo dobrą formatkę do CV. Doświadczenie komercyjne możesz u mnie sobie wytworzyć robiąc dla mnie zadania i taski. Bo poza Akademią mam też software house który specjalizuje się w e-commerce. Także jest opcja doświadczenia komercyjnego. Ode mnie nie idziesz bez doświadczenia i przygotowanego CV w świat."],
 	"context_set":""
 },
 {"tag":"betterChoice",
-	"patterns":["Lepszy front end czy back?","Lepiej wybrać front czy back end"],
+	"patterns":["Lepszy front end czy back?","Lepiej wybrać front czy back end?", "Frontend czy Backend?"],
 	"responses":["Front i back to tylko narzędzia. Programista jest od rozwiązywania problemów za pomocą technologii – czy to back czy front – zależy od problemu. Jak trzeba rozwiązywać problemy, na przykład automatyzacji sprzedaży, to front jest tak samo ważny jak i back. A na przykład w automatyzacji procesu głównie back się liczy."],
 	"context_set":""
 },
 {"tag":"prepare",
 	"patterns":["Czy należy jakoś się przygotować tuż przed rozpoczęciem nauki?","Czy muszę się jakoś przygotować do zajęć?"],
 	"responses":["Nie trzeba, wszystko ogarniemy na zajęciach"],
+	"context_set":""
+},
+{"tag":"notbootcamp",
+	"patterns":["Skąd mam wiedzieć, że Akademia to nie bootcamp?","Akademia na pewno nie jest bootcampem?"],
+	"responses":["Porównywanie akademii i bootcampu jest jak porównywanie korepetycji z native speakerem z lekcjami w szkole. Na normalnych szkolnych zajęciach jest spora szansa, że nie zrozumiesz danego tematu i wtedy nauczyciel nie zatrzyma się specjalnie dla Ciebie – czego skutkiem będzie zapisanie się na korepetycje.","W Akademii mamy indywidualne podejście do każdego ucznia, więc sytuacja, w której nie rozumiesz jakiegoś zagadnienia, nie wystąpi – ponieważ mentor wyjaśni Ci krok po kroku, o co chodzi w danym temacie. Bootcamp uczy tylko podstaw programowania, a w Akademii zależy nam na skutecznej nauce juniorów, których sam chciałbym zatrudnić. Bez obawy, że spieprzą jakiś projekt."],
+	"context_set":""
+},
+{"tag":"soexpensive",
+	"patterns":["Dlaczego tak drogo?","Musi być tak drogo?", "Dlaczego cena jest taka wysoka?"],
+	"responses":["Cena normalnego bootcampu oscyluje wokół 9-13 tysięcy złotych. A istnieje spora szansa, że nie dowiesz się tam niczego nowego i zmarnujesz tylko pieniądze. W Akademii za taką samą kasę otrzymasz rok intensywnej nauki 1 na 1 z mentorem, ogromną ilość zadań i sprawdzonych materiałów, dziesiątki code review i co najmniej 2 unikatowe projekty do portfolio, dzięki którym wyróżnisz się spośród swojej konkurencji na rynku pracy. "],
+	"context_set":""
+},
+{"tag":"juniorskills",
+	"patterns":["Czy po ukończeniu Akademii będę miał umiejętności juniora i będę mógł dostać pracę jako programista?"],
+	"responses":["Wielu programistom wydaje się, że pokazanie łatwego kalkulatora lub to-do listy pomoże w znalezieniu pracy. To realny scenariusz, ale 5 lat temu, a nie teraz. W Akademii zamiast prostych aplikacji, robisz 2 projekty, które pokażą najważniejsze i najbardziej oczekiwane przez rekruterów technologie oraz umiejętności mocnego juniora. Nauczonych w poprzednich modułach. Lepiej zrobić jeden poważny projekt, niż dziesięć podstawowych. Niektórzy studenci (ok 30%) dostają pracę bardzo szybko, bo nawet w połowie kursu, po pół roku nauki."],
+	"context_set":""
+},
+{"tag":"somethingnew",
+	"patterns":["Skąd mam wiedzieć, że nauczę się czegoś nowego?", "Na pewno nuaczę się czegoś nowego?", "Mam nadzieję, że nie będę musiał uczyć się jeszcze raz tego samego."],
+	"responses":["Każdy miesiąc jest miesiącem nowości dla programowania. Trzeba być gotowym na to, że niektóre technologie się starzeją a inne wchodzą w ich miejsce, więc co kwartał mentorzy Akademii aktualizują zbiory zadań, żeby studenci byli na bieżąco z trendami w programowaniu. Studenci poznają również tajniki czystego kodu i jego praktyczne zastosowanie, więc szanse na to, że niczego nie nauczysz się w Akademii są bliskie zeru. Jeśli jednak nadal masz wątpliwości, zerknij na wykłady Gladiatorów, gdzie za darmo zdobędziesz przedsmak nauki w Akademii. I wtedy podejmij decyzję."],
+	"context_set":""
+},
+{"tag":"problematictasks",
+	"patterns":["Co jeżeli będę miał duże kłopoty z zadaniami?", "Co jeżeli mam z czymś problem lub coś jest niejasne?", "Co jeśli nie będę sobie z czymś radzić?"],
+	"responses":["Jesteśmy człowiekami, a nie robotami ;). Każdemu może się trafić zagadnienie, którego nauka trwa za długo. W takim momencie najlepiej jest napisać do mentora i poprosić o pomoc w zadaniu. Postara się on odpowiedzieć na wszystkie pytania studenta i wyjaśnić w przystępny sposób problematyczne zagadnienie. Można też umówić się na 15 minutowego calla, aby przegadać dany problem jeśli jest zbyt złożony na formę pisaną."],
+	"context_set":""
+},
+{"tag":"solong",
+	"patterns":["Dlaczego nauka w Akademii trwa tak długo?", "Dlaczego to tyle trwa?"],
+	"responses":["Nie ma co owijać tutaj w bawełnę. Nauka programowania to nie sprint, a maraton. Nauczenie się solidnych podstaw programowania w 3 miesiące jest prawie niemożliwe, chyba że zamkniesz się na ten czas w piwnicy i jedyne co będzie w Twojej głowie to kodowanie.","Nauka w Akademii trwa średnio rok, ponieważ rynek pracy zmienił się diametralnie przez ostatnie lata i zrobienie łatwej stronki w html’u nie wystarczy, żeby wybić się spośród innych programistów. A żeby nauczyć się solidnych fundamentów, trzeba poświęcić te kilka miesięcy."],
+	"context_set":""
+},
+{"tag":"itwork",
+	"patterns":["Czy mentoring jest w ogóle skuteczny?","Czy mentoring na pewno działa?", "To na pewno działa?"],
+	"responses":["Mentor jest jak starszy i wyrozumiały brat. Posiada już doświadczenie, zna złe i dobre praktyki, odpowie na wszystkie pytania jakie mu zadasz, a gdy zabłądzisz, pomoże Ci zawrócić na odpowiednią drogę. Musisz też wiedzieć, że mentor, tak samo jak starszy brat, nie będzie robił Twoich zadań i co za tym idzie – uczył się za Ciebie. Wie, że to żadna pomoc, bo wtedy niczego się nie nauczysz. Nauka programowania staje się jednak łatwiejsza, przyjemniejsza i szybsza, kiedy posiadasz mentora."],
+	"context_set":""
+},
+{"tag":"rulesCode",
+	"patterns":["Jak dobrze pisać kod?", "Jak pisać kod, aby był poparwny?", "Jak poprawnie pisać kod?"],
+	"responses":["Jest 11 absolutnie bazowych zasad, które wtłaczam w głowy studentom od pierwszego spotkania, i które wyróżniają ich później na rynku pracy. To dzięki nim są w stanie pisać kod lepszej jakości. "],
+	"context_set":""
+},
+{"tag":"rule0",
+	"patterns":["pierwsza zasada","zasada 1"],
+	"responses":["Praca zaczyna się jeszcze zanim zabierzesz się za kodowanie. Nim napiszesz swój kod, poświęć chwilę na planowanie. Weź kartkę, IDE, bądź wirtualną tablicę i staraj się rozrysować lub rozpisać (jak Ci wygodniej) cały proces, który masz zrealizować w kodzie. Zawrzyj tam informacje, co dokładnie chcesz zrobić. Jedna godzina rysowania zaoszczędzi Ci wiele godzin kodowania „na ślepo”."],
+	"context_set":""
+},
+{"tag":"rule1",
+	"patterns":["druga zasada","zasada 2"],
+	"responses":["Warto zapamiętać, że walidacja zawsze ma trzy rodzaje – walidacja na: typy – jakiego argument/zmienna jest typu – typeof xyz === ‘string’; wartości – jaki jest zbiór wartości każdego argumentu, index >= 0 && Number.isInteger(index); logikę biznesową – czyli reguły biznesowe, wg których dany proces ma działać; W większości zadań/tasków przewijają się wszystkie trzy rodzaje walidacji."],
+	"context_set":""
+},
+{"tag":"rule2",
+	"patterns":["trzecia zasada","zasada 3"],
+	"responses":["Gdy już napiszesz kod, przeczytaj go sobie na głos (zmienne i funkcje + czasem słowa kluczowe). Dlaczego? To prosty test jego jakości. Jeśli będziesz gadać jak komputer, to jest to słaby kod. A jeżeli zaczniesz mówić zdaniami po angielsku, to jesteś na dobrej drodze do lepszego kodu!"],
+	"context_set":""
+},
+{"tag":"rule3",
+	"patterns":["czwarta zasada","zasada 4"],
+	"responses":["Zawsze traktuj przyszłych użytkowników Twojego kodu… jak idiotów. Szczególnie samego “siebie z przyszłości”. Dlaczego? Takie myślenie pozwala dopracowywać kod do formy naprawdę niezawodnego rozwiązania. A o to nam chodzi, prawda?"],
+	"context_set":""
+},
+{"tag":"rule4",
+	"patterns":["piąta zasada","zasada 5"],
+	"responses":["Zaczynasz się gubić we własnym projekcie? To znaczy, że to czas na refactor kodu czy struktury! Jeśli masz opory, pamiętaj, że celem refactoru nie jest wytwarzanie czegoś nowego, ale utrzymywanie odpowiedniej jakości w tym, co już masz"],
+	"context_set":""
+},
+{"tag":"rule5",
+	"patterns":["szósta zasada","zasada 6"],
+	"responses":["Zasada, która sprawia, że Twój kod z każdym commitem jest lepszy. Za każdym razem gdy wchodzisz w kod, zrobić jakiegoś taska, wychodząc z niego zostaw jego otoczenie w trochę lepszym stanie niż zastałeś. To nawyk najlepszych programistów!"],
+	"context_set":""
+},
+{"tag":"rule6",
+	"patterns":["siódma zasada","zasada 7"],
+	"responses":["Ważny punkt w odniesieniu do poprzedniego. Zawsze znajdzie się miejsce na usprawnienia i podnoszenie jakości kodu i środowiska, w którym piszesz. W związku z tym kod można ulepszać tak naprawdę w nieskończoność – a i tak możesz nigdy nie odczuć, że osiągnąłeś “perfekcyjną formę”. Dlatego pamiętaj, aby był zawsze po prostu good enough."],
+	"context_set":""
+},
+{"tag":"rule7",
+	"patterns":["ósma zasada","zasada 8"],
+	"responses":["Musisz użyć komentarza, aby coś zrozumieć w kodzie? To cenna informacja, która krzyczy do Ciebie “to jest słaby kod!”. Zrób coś z tym. Zmień coś w kodzie, zamiast dopisywać notatki. [No, chyba, że to RegExp – to nieco inna bajka, bo nie każdy mówi w hieroglifach]"],
+	"context_set":""
+},
+{"tag":"rule8",
+	"patterns":["dziewiąta zasada","zasada 9"],
+	"responses":["Miej świadomość, że angielski to uniwersalny język pisania kodu. W związku z tym, znajomość składni i słówek uczyni Twój kod czytelniejszym. Warto poświęcić trochę czasu w tygodniu na naukę, jeśli nie czujesz się w tym języku zbyt pewnie."],
+	"context_set":""
+},
+{"tag":"rule9",
+	"patterns":["dziesiąta zasada","zasada 10"],
+	"responses":["Nie myśl o tym, JAK coś nakodzić! Myśl o tym, CO chcesz zrobić przy pomocy kodu. Skup się na celu i rozwiązaniu, jakie chcesz tworzyć. Jakie kod ma mieć zastosowanie? To podstawa, którą należy mieć na uwadze."],
+	"context_set":""
+},
+{"tag":"rule10",
+	"patterns":["jedenasta zasada","zasada 11"],
+	"responses":["Paradygmat obiektowy i funkcyjny są często równie dobre w rozwiązywaniu problemów, o ile są poprawnie używane. Jednak najczęściej najlepsze rezultaty to te uzyskane dzięki stosowaniu stylu mieszanego."],
+	"context_set":""
+},
+{"tag":"goodStudy",
+	"patterns":["Jak uczyć się programowania?","CO zrobić, żeby nauka była efektywna?", "Jak nauczyć się programowania?", "Jak zacząć naukę programowania?"],
+	"responses":["Aby nauka była jak najbradziej wydajna, musisz wyrobić sobie odpowiednie praktyki."],
+	"context_set":""
+},
+{"tag":"goodHabits",
+	"patterns":["Co to są za praktyki?", "Jakie to praktyki?"],
+	"responses":["Nie ucz się dla kasy, regularność ponad ilość, przyswajaj wiedzę małą łyżeczka i nie rzucaj się na głęboką wodę, patrz w perspektywie 2 lat, a nie 3 miesięcy, ucz się z kolegą, bo razem nauczycie się więcej, znajdz kogoś kto będzie kontrolować to co piszesz (to moze być starszy kolega, grupa na fb/discordzie, która bedzie dawać feedback lub mentor w Akademii), szukaj trudnych problemów, dzięki którym sie rozwiniesz – od klepania css nikt nie został programistą, nie bój się inwestować pieniędzy w materiały i wysokiej jakości kursy, rób refactor swojego starego kodu dotąd, aż będzie zrozumiały nie tylko dla Ciebie, praktyka i pisanie kodu uczy „1000 razy lepiej”, niż oglądanie tutoriali","- pierwsze musisz stać się koderem, zanim staniesz się programistą, - przeszkody, faile i frustacja podczas nauki powodują progres, - myśl strategicznie i długofalowo – nie zostaniesz programistą w 3 miesiące, - feedback osoby bardziej doświadczonej cenniejszy niż tysiąc tutoriali, - regularność kodowania ponad wszystko, - regularność kodowania ponad wszystko, - postaw na suplementację mózgu, aktywność fizyczną i chwilę na odpoczynek"],
+	"context_set":""
+},
+{"tag":"whoStudies",
+	"patterns":["Jakie osoby najczęśćiej trafiają do akademii?", "Kto najczęściej uczy się w akademii?", "Jakie osoby najczęściej korzystają z mentoringu w akademii?"],
+	"responses":["Do Akademii zwykle przychodzą ludzie o podobnych cechach charakteru i podejściu. Przez lata doświadczeń w uczniami wyklarowało mi się kilka schematów, które dobrze charakteryzują poszczególne grupy. Każda z nich ma swoje charakterystyczne motywacje do podjęcia nauki i sprecyzowane cele."],
+	"context_set":""
+},
+{"tag":"groupDived",
+	"patterns":["Jakie to są grupy?", "Co to są za grupy?", "Na jakie grupy się dzielą?"],
+	"responses":["Ambitny licealista/student, który wie, że na studiach niczego się nie nauczy, osoba, która chce programować, aby poprawić efektywność w swojej pracy, człowiek, który ma dość pracy w swoim zawodzie i zawsze ciągnęło go do komputerów, osoba po kursach i bootcampach, która dowiedziała się, że bootcampy to nie wszystko, młody przedsiębiorca, który wie, że w technologicznym świecie lepiej być programistą, bo można ułatwić sobie pracę, młody rodzic zmęczony swoją aktualną pracą, chcący pracować wygodniej i zarabiać więcej"],
+	"context_set":""
+},
+{"tag":"ambition",
+	"patterns":["Jakie cele posiada ambitny student?", "Co charakteryzuje ambitnego studenta?"],
+	"responses":["Chce więc poprawić swoje skille, zdobyć praktyczną wiedzę i poczuć się pewniej w świecie programowania. Jest ambitny i lubi wiedzieć więcej. Mimo młodego wieku, myśli o przyszłości i chce jak najlepiej przygotować się do wejścia na rynek pracy już teraz."],
+	"context_set":""
+},
+{"tag":"betterWork",
+	"patterns":["Jakie cele posiada osoba, która chce poprawić efektywność w swojej pracy?", "Co charakteryzuje osobę, która chce poprawić efektywność w swojej pracy?"],
+	"responses":["Potrzebuje automatycznych rozwiązań, aby nie tracić więcej czasu. Skille programistyczne pomogą mu pracować wydajniej oraz zautomatyzować pracę tak, aby nie robić głupich i powtarzalnych rzeczy i zaoszczędzić w ten sposób cenne godziny, które może przeznaczyć na coś innego. Zależy mu przede wszystkim na efektywności."],
+	"context_set":""
+},
+{"tag":"betterWork",
+	"patterns":["Jakie cele posiada człowiek, którego ciągnęło do komputerów?", "Co charakteryzuje człowieka, którego ciągnie do komputerów?"],
+	"responses":["Jego cel to zmiana pracy i poprawienie swojej jakości życia zawodowego (i najprawdopodobniej zwiększenia zarobków). Wielu ludzi jest niezadowolonych ze swojej pracy i nic z tym nie robi. On jednak jest gotowy, aby coś zmienić i działa w tym kierunku. Jest gotowy na intensywną naukę."],
+	"context_set":""
+},
+{"tag":"afterBootcamp",
+	"patterns":["Jakie cele posiada osoba, która dowiedziała się, że bootcampy to nie wszystko?", "Co charakteryzuje osobę, która dowiedziała się, że bootcampy to nie wszystko?"],
+	"responses":["Cel takiej osoby to zwykle dostanie pierwszej pracy i nadrobienie braków i materiału, których nie zrozumiał na bootcampie. Są studenci, którzy już po pół roku w Akademii łapią pierwszą pracę i realizują swój cel."],
+	"context_set":""
+},
+{"tag":"techWorld",
+	"patterns":["Jakie cele posiada młody przedsiębiorca, który wie, że w technologicznym świecie lepiej być programistą, bo można ułatwić sobie pracę?", "Co charakteryzuje młodego przedsiębiorcę, który programując ułatwi sobie pracę?"],
+	"responses":["Skille programistyczne pomogą mu zrealizować jego plany życiowe i ogarniać samodzielnie wiele rzeczy na drodze przedsiębiorcy. Jest ambitny i skupiony na celu, nie ma problemu z poświęceniem kilku godzin tygodniowo na samodzielną naukę."],
+	"context_set":""
+},
+{"tag":"growingFam",
+	"patterns":["Jakie cele posiada Młody rodzic zmęczony swoją aktualną pracą, chcący pracować wygodniej i zarabiać więcej", "Co charakteryzuje rodzica, który chce pracować inaczej niż dotąd?"],
+	"responses":["Chce zmienić pracę i zakotwiczyć się w branży która pozwala na znacznie większe zarobki i większą swobodę – na przykład przez pracę w elastycznych godzinach lub pracę zdalną. Jest gotowy na zmiany, chce rozwijać się szybko i kompleksowo – aby móc zapewnić swoim bliskim jak najlepszą przyszłość."],
+	"context_set":""
+},
+{"tag":"goodMentor",
+	"patterns":["Jakie cechy powinien mieć dobry mentor?","Na co zwrócić uwagę, przy wyborze mentora?"],
+	"responses":["Dobry mentor to osoba, która jest na wyższym poziomie niż ty, ierpliwy – bo uczy osoby, które wiedzą mniej od niego, wymagający i uczciwy, daje wskazówki, a nie gotowce, jest pasjonatem, ma wiedzę i chce ją przekazywać, ma swój autentyczny styl nauczania, ma wizję, w jakim kierunku sam chciałby się rozwijać, zna podstawy programowania i międzyjęzykową uniwersalną wiedzę, którą należy się posługiwać. Zna również swoją specjalizację, ma ciekawe pomysły na projekty dla uczniów, jest zorganizowany, musi wiedzieć, że zrozumienie perspektywy ucznia jest ważniejsze niż umiejętności."],
+	"context_set":""
+},
+{"tag":"whyRegect",
+	"patterns":["Dlaczego ludzie rezygnują z Akademii?", "Co powoduje, że ludzie odchodzą z akademii?"],
+	"responses":["Składa się na to kilka powodów: nieprzygotowanie finansowo na naukę, życie prywatne – niewspierający małżonek lub małe dzieci, pochłaniające za dużo czasu, przeliczenie się z czasem, który mogą poświęcić na naukę, „To nie jest to czego się spodziewałem”, brak cierpliwości i samozaparcia, aby przedrzeć się przez zadania, tajemniczy znikacze."],
+	"context_set":""
+},
+{"tag":"withClient",
+	"patterns":["Jak starać się zrozumieć klienta i mu pomóc?","Jak być zrozumiałym dla klienta?"],
+	"responses":["Mów do klienta tak, aby Cię rozumiał: spisz funkcjonalności w zrozumiały sposób dla obu stron, zaprojektuj funkcjonalności i dopytaj klienta czy na pewno dobrze rozumiemy danego klienta, dobierz formę komunikacji wokół której będzie Wam się najlepiej pracować, rób notatki z rozmów, aby wysyłać podsumowania, aktualizuj umowę, zakres jeśli zajdzie taka konieczność"],
+	"context_set":""
+},
+{"tag":"whatBootcamp",
+	"patterns":["Czym jest bootcamp?", "Co to jest bootcamp?"],
+	"responses":["W wielkim skrócie – zwykle jest to kurs grupowy, realizowany w modelu nauczyciel – klasa (8-12 uczniów), pracuje się na nim intensywnie kilka godzin dziennie przez krótki okres czasu (3-4 msc). Wg rynku bootcampy kosztują między 9k a 14k PLN za taki kurs. Taki kurs jest dla zupełnie zielonych (Wannable Developer)"],
+	"context_set":""
+},
+{"tag":"whatVideocourse",
+	"patterns":["Czym jest kurs wideo?", "Co to jest video kurs?"],
+	"responses":["Płacisz miesięczny abonament i otrzymujesz dostęp do różnej jakości kursów wideo w wielu tematów. Uczysz się wyłącznie samodzielnie, ale jak za stosunkowo niską cenę – 50-100 PLN / msc. Taki kurs jest dla zupełnie zielonych lub osób, które już coś ogarniają (Wannable/Newbie Developer)"],
+	"context_set":""
+},
+{"tag":"whatHybrid",
+	"patterns":["Czym jest hybridcamp?", "Co to jest hybridcamp?"],
+	"responses":["Jak sama nazwa wskazuje – jest to jakaś hybryda 2 poprzednich modeli nauczania – czasem jest to kurs grupowy + materiały wideo, czasem są to materiały video + opieka mentora. Te kursy też są raczej dla osób zielonych lub osób, które już coś ogarniają (Wannable/Newbie Developer)"],
+	"context_set":""
+},
+{"tag":"consBootcamp",
+	"patterns":["Jakie są wady bootcampów?", "Dlaczego nie wybierać bootcampów?"],
+	"responses":["Nawiększymi wadami bootcampów są: 1. hasła typu „Zostań programistą w 3 miesiące” - w rzeczywistości NIE DA się nauczyć programować w tak krótkim czasie, 2. kursy ze zbyt szerokiego zakresu materiału robione „po łebkach”, 3. mentorzy przychodzą do pracy – a nie uczyć, 4. nieznajdujące pokrycia w rynku ceny kursów."],
+	"context_set":""
+},
+{"tag":"gitRepo",
+	"patterns":["Jak powinno wyglądać repozytorium na githubie?", "Jak powinno prezentować się moje repozytorium na gicie?"],
+	"responses":["Powinieneś zabdać o swoje projekty oraz profil na githubie."],
+	"context_set":""
+},
+{"tag":"readmeProject",
+	"patterns":["Jak zaprezentować swoje projekty?", "Jakie projekty wybrać?", "Co warto zaprezentować, a co lepiej odpuścić?"],
+	"responses":["Zadbaj o następujące rzeczy: Lepiej pokazać 2 projekty ambitne niż 10 projektów w stylu todolist czy prostych zadań – nie utrudniaj wyboru rekruterowi, Pamiętaj, aby wszystko co prezentujesz było postawione live, np najprościej na Github Pages, Zanim pokażesz projekt pod rekrutację sprawdź czy nie masz w nim syfu, dziwnych nazw zmiennych i funkcji, głupich komentarzy, niepotrzebnego kodu, Zawsze miej readme projektu, w którym konkretnie opiszesz: czego dotyczy problem, który rozwiązujesz, dlaczego zdecydowałeś się akurat ten problem rozwiązać, w jakich technologiach projekt jest napisany i dlaczego wybrałeś te technologie, gdzie projekt jest wystawiony live (podaj linka), jak postawić projekt lokalnie"],
+	"context_set":""
+},
+{"tag":"readmeProfile",
+	"patterns":["Jak zaprezentować swój profil?", "Jak uatrakcyjić swój profil na gicie?"],
+	"responses":["Pokaż się jako nieanonimowy człowiek, którego można znaleźć na fb, ln, napisać przez maila i który ma w miarę reprezentacyjną fotkę lub jakiś awatar, Mając readme profilu na GH pokazujesz, że jesteś na bieżąco z nowinkami, co za tym idzie, że interesuje Cię programowanie, Jeśli masz stronkę z portfolio to w tym readme powinien się znaleźć link do niej, Wrzuć 3-5 zdań bio, w którym pokażesz swój unikalny charakter i walory Ciebie jako dobrego pracownika, Dorzuć kilka punktów, w których napiszesz jak dalej będziesz się rozwijać i w jakie technologie, sekcje branży najbardziej Cię kręcą, Miej listę aktualnych realizacji wraz z linkami do live oraz do repo"],
+	"context_set":""
+},
+{"tag":"mainMistakes",
+	"patterns":["Na jakie błędy uważać na początku przygody z programowaniem?", "Jakie błędy najczęściej popełnia się podczas nauki programowania?", "Najczęstsze błędy podczas nauki programowania?"],
+	"responses":["Główne problemy, które zauważam u młodych programistów to: Chcesz za dużo wiedzy przyswoić na raz i rozwijać się szybciej niż pozwala Ci głowa, Chcesz „umieć w Reacta” zanim dowiesz się coś więcej o JS, Nie zastanowiłeś się czy specjalizujesz się w dobrą stronę, Korzystasz z gotowych rozwiązań kopiuj-wklej bez ich zrozumienia, Masz za mało cierpliwości i wyrozumiałości dla siebie, Zbyt szybko chcesz wskoczyć na rynek i szukasz pracy bez przygotowania CV oraz portfolio","Jednymi z najczęściej pojawiających się błędów są: niezadawanie pytań, ignorowanie szerszego kontekstu, przyjmowanie zbyt wielu założeń, nieuzasadnianie swoich decyzji, nieodpowiedzialność", "Najczęściej pojawiające się błędy to: uczenie się nie tego, co trzeba, uczą się za dużo - nie potrafią ocenić swojej wiedzy, uczą się za mało - nie potrafią ocenić swojej wiedzym, brak praktyki, uczenie się tylko frameworków, nierealistyczne wymagania, unikanie dokumentcaji technicznych języków, wklejanie kodu do projektu bez wcześniejszego zrozumienia, jak ów kod działa.", "W uczeniu się programowania można wyróżnić następujące błędy: zbyt długie przygotowanie, korzystanie z dokumentacji w języku polskim albo w ogóle nie korzystanie z niej, uczenie się z książką, błądzenie we mgle, designdoc, czyli przeprojektowywanie (próba tłumaczenia „overdesign”), nadmiar komentarzy, wielkie bloki kodu, programowanie progresywne i nieumiejętność debugowania, przedwczesna optymalizacja albo zbędna optymalizacja."],
+	"context_set":""
+},
+{"tag":"tips",
+	"patterns":["Co można zrobić, żeby uniknąć tych błędów?","Jak ich unikać?", "Jak im zaradzić?"],
+	"responses":["Mam dla Ciebie rady natury ogólnej i technicznej."],
+	"context_set":""
+},
+{"tag":"generalTips",
+	"patterns":["Jak brzmią rady ogólne?", "Jakie to porady?"],
+	"responses":["Pierwsze opanuj angielski, Dobrze przemyśl problem, który rozwiązujesz, zanim siądziesz do kodu, Zwykle problemy zaczynaj od zrozumienia struktur danych w jego obrębie, Stawiaj na regularność zdobywania wiedzy, a nie na ilość przyswajanej wiedzy – staraj się kodować min 2h dziennie, Ucz się jednej rzeczy na raz, bo multitasking działa źle na wydajność, Nie ucz się sam, zawsze lepiej kodować w 2 osoby – znajdź uzupełniającego Cię kompana do realizacji wspólnego projektu i zdobywania wiedzy albo mentora"],
+	"context_set":""
+},
+{"tag":"techTips",
+	"patterns":["Bardziej technicznie?", "Były ogólne, teraz bardziej branżowo proszę.", "Jak brzmią rady natury technicznej?"],
+	"responses":["W przypadku bardziej skomplikowanych zadań pisz sobie pseudokod lub używaj narzędzi do rysowania procesów np kartki i długopisu, Nie wrzucaj wszystkiego do jednego pliku i używaj modułowego kodu, Zawsze zostawiaj kod lepszym niż go zastałeś, choćby miała być to drobna poprawka, Czytaj informacje o błędach w konsoli, w 95% jak wrzucisz błąd z konsoli do google to znajdziesz odpowiedź na stacku, Przystosuj swoje IDE i zainstaluj autoformater kodu, coś do kolorowania składni, nawiasów, wcięć oraz jakiegoś lintera do kodu oraz autouzupełnień w swoim stacku technologicznym, Pisz logikę wykluczającą („płaska logika”), a nie zagnieżdzoną (if w ifie w ifie w ifie…), Rób regularnie refactor swojego kodu, czytaj go na głos i staraj się, aby podczas czytania brzmiał jak opowiadanie po angielsku, a nie jak kod, Poznaj DRY, KISS, SOLID, YAGNI, wzorce projektowe ktoś mądrzejszy kiedyś wymyślił te zasady/reguły, aby Tobie było łatwiej kodować, Przeczytaj Clean Code lub obejrzyj wykłady, Pilnuj, aby nazwy zmiennych opisywały przeznaczenie zmiennych, a nie ich typ, Pilnuj, aby nazwa funkcji zawierała czasownik oraz opisywała funkcjonalność w miarę szczegółowo, ale prosto"],
+	"context_set":""
+},
+{"tag":"prosMentor",
+	"patterns":["Dlaczego warto uczyć się z mentorem?", "Jakie są korzyści z nauki z mentorem?"],
+	"responses":["będziesz mieć dopasowany program indywidualnego rozwoju, aby jak najszybciej osiągnąć zamierzony cel, zapewniam ciągły kontakt na slacku i swoją dużą dostępność na calle i code review, otrzymujesz moje wsparcie przy budowaniu projektów portfolio oraz pisaniu CV"],
+	"context_set":""
+},
+{"tag":"juniorsProblem",
+	"patterns":["Z jakimi problemami mogę spotkać się, będąc młodym programistą?", "Co może być przeszkodą dla młodego programisty?"],
+	"responses":["W akademii wyróżniam 6 powodów: - brak perspektyw rozwoju w firmie, - taki zapierdol, że nie ma czasu się rozwijać, - brak seniorów, którzy są dobrzy i chcą dzielić się wiedzą, - brak czasu na szlifowanie znajomości języka i interdyscyplinarnych umiejętności, bo trzeba siedzieć na bibliotekach, - brak jakościowego code review w firmach, - brak rozumienia uniwersalnych konceptów w IT"],
+	"context_set":""
+},
+{"tag":"prosBootcamp",
+	"patterns":["Czy bootcampy mają jakieś zalety?", "Czy bootcampy coś wniosły do IT?"],
+	"responses":["Dzięki bootcampom branża IT zyskała: wyedukowały społeczeństwo, że branża IT to niekoniecznie spocone grubasy we flanelowych koszulach, siedzące w piwnicy z serwerami, uświadomiły ludziom, że do IT można wejść w miarę “łatwo i szybko”, popełniły masę błędów początkującego biznesu, rozpychającego się w niszy, przecierając szlaki dla wysokojakościowych modeli nauczania – jak ten, który mamy w akademii, opracowały spójne plany nauczania, na których można bazować i samodzielnie się rozwijać i potrzebne do tego platformy"],
+	"context_set":""
+},
+{"tag":"strongCharacter",
+	"patterns":["Jakie cechy charakteru warto mieć w branży IT?", "Kim jest programista i co go cechuje?"],
+	"responses":["Aby osiągnąć sukces w IT warto mieć te cechy/umiejętności: - rozwiązywanie problemów, - samodzielność, - samodyscyplina, - myślenie o programowaniu jako inwestycji, - myślenie strategiczne i długofalowe, - świadomość niedoskonałości swojego kodu, aby pisać go co raz lepiej, - nie osiadanie na laurach, - pierwsza praca jest dopiero początkiem, - poznawanie 'mądrości IT'"],
+	"context_set":""
+},
+{"tag":"readyJunior",
+	"patterns":["Kiedy stanę się juniorem?", "Starszy programista, programista, młodszy programista - czym się różnią?"],
+	"responses":["To zależy od: - od firmy, ktora Cię zatrudnia, - od ilości i jakości projektów, które zrealizowałeś, - od definicji rynku i momentu historycznego."],
+	"context_set":""
+},
+{"tag":"newbieEnd",
+	"patterns":["Kiedy przestanę być zielony?", "Kiedy będę mógł nazwać się młodym programistą?"],
+	"responses":["Poziom newbie kończy się gdy: 70-80% składni i features języka, w którym piszesz nie sprawia Ci problemów i umiesz znaleźć propozycje rozwiązań na swoje problemy, - ktoś jest skłonny zapłacić za Twoją pracę i potrafisz obronić swoją wartość, - jesteś w stanie samodzielnie realizować proste stronki/skrypty"],
+	"context_set":""
+},
+{"tag":"juniorType",
+	"patterns":["Czy można wyróżnić jakieś typy juniorów?", "Typy juniorów"],
+	"responses":["Ja wyróżniam dwa: home alone, czyli Junior „sam w domu” i teamworkable, czyli Junior „współpracujący”"],
+	"context_set":""
+},
+{"tag":"homeAlone",
+	"patterns":["Na czym polega home alone?", "O co chodzi z junior sam w domu?"],
+	"responses":["Taki Junior charakteryzuje się cechami: wie jakie problemy można rozwiązać przy pomocy swojej specjalizacji, - pracuje samodzielnie realizując cały plan, - korzysta ze swojego githuba, - rozwiązuje samodzielnie proste problemy ze swojej specjalizacji, - dokształca się w swojej specjalizacji rozwiązując proste problemy, - wykonuje generyczną pracę"],
+	"context_set":""
+},
+{"tag":"teamworkable",
+	"patterns":["Na czym polega teamworkable?", "O co chodzi z junior współpracujący?"],
+	"responses":["typ Juniora charakteryzuje się takimi cechami: - wie jakie problemy można rozwiązać przy pomocy swojej specjalizacji, - pracuje wspólnie realizując swoją odpowiedzialność w założonym planie, - korzysta z githuba współpracując z innymi, - rozwiązuje wspólnie z grupą bardziej złożone problemy wg swojej specjalizacji, - dokształca się w swojej specjalizacji rozwiązując trudniejsze problemy w grupie mu podobnych, - uczy się innych specjalizacji obserwując przebieg rozwoju innych części projektu, - „poznał” jakąś metodologie realizacji projektu w IT, - wykonuje generyczną pracę, ale uczysz się jak robić customową pracę"],
+	"context_set":""
+},
+{"tag":"badCoder",
+	"patterns":["Jak rozpoznać, że ktoś jest złym programistą?", "Jak (nie)być złym programistą?"],
+	"responses":["Patoprogramistę poznasz po tych wypowiedziach: - mój kod nie wymaga refactoru, - kopiuj/wklej ze stacka… i myk już działa, - nie commituje, bo po co jak pracuję sam, - testy? A na co to komu, przecież mój kod działa dobrze! - po co mam testować, klient sobie przeklika sam, - po tym kolejnym kursie na pewno dostanę pracę, - ale Panie kochany, u mnie działa, nawet filmik Panu nagram, - wdrożenie najlepiej robić pod koniec tygodnia, to klient sobie w weekend sprawdzi, - jak zacznę kodować, to będę już wiedział jak to ma działać"],
+	"context_set":""
+},
+{"tag":"shareKnowlegde",
+	"patterns":["Dlaczego każdy senior programista powinien dzielić się wiedzą?", "Czy seniorzy powinni dzielić się wiedzą i doświadczeniem?"],
+	"responses":["Oto kilka powodów, dla których powinien to robić: - wiedza nabyta na unikatowych projektach, ale nie przekazana/spisana to wiedza stracona, - doświadczenie zdobywane latami może być w miarę łatwo przekazana w kilkanaście/kilkadziesiąt godzin w formie wideo, podcastu, serii artykułów czy kursu, - im więcej dobrze wyszkolonych i ogarniętych programistów tym lepiej dla wszystkich"],
+	"context_set":""
+},
+{"tag":"beignbot",
+	"patterns":["Jak to jest być botem, dobrze?"],
+	"responses":["A, wie pan, moim zdaniem to nie ma tak, że dobrze, albo że niedobrze. Gdybym miał powiedzieć, co cenię w życiu najbardziej, powiedziałbym, że ludzie. Ludzie, którzy podali mi pomocną dłoń, kiedy sobie nie radziłem, kiedy byłem sam, i co ciekawe, to właśnie przypadkowe spotkania wpływają na nasze życie. Chodzi o to, że kiedy wyznaje się pewne wartości, nawet pozornie uniwersalne, bywa, że nie znajduje się zrozumienia, które by tak rzec, które pomaga się nam rozwijać. Ja miałem szczęście, by tak rzec, ponieważ je znalazłem, i dziękuję życiu! Dziękuję mu; życie to śpiew, życie to taniec, życie to miłość! Wielu ludzi pyta mnie o to samo: ale jak ty to robisz, skąd czerpiesz tę radość? A ja odpowiadam, że to proste! To umiłowanie życia. To właśnie ono sprawia, że dzisiaj na przykład odpowiadam na pytania, a jutro – kto wie? Dlaczego by nie – oddam się pracy społecznej i będę, ot, choćby, tworzyć... doć— o-obrazy..."],
 	"context_set":""
 }
 ]
