@@ -10,6 +10,9 @@
   right: 28px;
   width: 280px;
 }
+#open-chat:hover{
+	background-color: #1301A3;
+}
 .window{
 	height: 410px;
   display: none;
