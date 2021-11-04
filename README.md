@@ -10,6 +10,6 @@ klasyfikacjami recenzji filmów, wpisów na twiterze czy spam-maili.
 - Jeśli ktoś chciałby sobie pogadać z botem, może to zrobić uruchamiając plik bezpośrednio z githuba w usłudze gooogle.colab.com. 
 wybierz pilk -> chatBot_flask_testowa.ipynb -> kliknij "Open in Colab" -> uruchom po kolei wszystkie komórki -> zjedź na dół i poczekaj, aż model skończy się uczyć -> kliknij w "* Running on http://2e6d-34-125-78-31.ngrok.io"
 
-UWAGA: * Running on http://2e6d-34-125-78-31.ngrok.io ten link będzie się zmieniał za każdym razem, gdy ponownie uruchomisz kod z komórki, w której wywoływany flask
+UWAGA: * Running on http://2e6d-34-125-78-31.ngrok.io - ten link będzie się zmieniał po każdym uruchomieniu komórki, z której wywoływany jest flask.
 
 - wersja live wkrótce będzie dostępna
