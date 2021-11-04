@@ -1,15 +1,25 @@
 {
 	"questionAnswer":[
-		{"tag": "greeting",
-			"patterns": ["Dzień dobry","Witam","Dobry wieczór","Cześć", "Hej"],
-			"responses": ["Dzień dobry", "Dobry wieczór", "Witam", "Siemka"],
+		{"tag": "greetingFormal",
+			"patterns": ["Dzień dobry","Witam","Dobry wieczór"],
+			"responses": ["Dzień dobry", "Dobry wieczór", "Witam", "Kłaniam się"],
 			"context_set": ""
 		},
-		{"tag":"goodbye",
-		"patterns":["Dowidzenia","Dobranoc","Dziękuję","Pa pa", "Dozobaczenia"],
+		{"tag": "greetingInformal",
+			"patterns": ["Cześć", "Hej", "Siemka"],
+			"responses": ["Siemka", "Cześć", "Hejka"],
+			"context_set": ""
+		},
+		{"tag":"goodbyeFormal",
+		"patterns":["Dowidzenia", "Dobranoc", "Dziękuję za pomoc."],
 		"responses":["Dowidzenia","Dobranoc","Cała przyjemność po mojej stronie", "Zapraszam ponownie"],
 		"context_set":""},
 
+		{"tag":"goodbyeInformal",
+		"patterns":["Pa pa", "Do zobaczenia", "Do następnego", "Dzięki, pomogłeś mi."],
+		"responses":["Cała przyjemność po mojej stronie", "Zapraszam ponownie", "Do zobaczenia", "Pa pa"],
+		"context_set":""},
+		
 		{"tag": "mentoringInfo",
 		"patterns":["Co to jest mentoring?", "Jak wygląda mentoring ?"],
 		"responses":["Najłatwiej porównać to do 3 przyziemnych rzeczy: opieka starszego i wyrozumiałego brata, regularny bieg w runmageddonie, GPS wyznaczający drogę po internecie.", "W skrócie mentoring w Akademii to: -aktualne materiały teoretyczne + skompikowane zadania praktyczne; -cotygodniowe calle z mentorem na code review Twoich rozwiązań; -komunikacja przez Slacka/call przez Zooma w razie problemów"],
@@ -47,13 +57,13 @@
 		"context_set":""},	
 
 	{"tag":"howLong",
-	"patterns":["Jak długo trwa mentoring?","Ile trwa nauka w Akademii?", "Ile czasu zajmuje nauka programowania?"],
+	"patterns":["Jak długo trwa mentoring?","Ile trwa nauka w Akademii?", "Ile czasu zajmuje nauka programowania?", "Ile czasu potrzeba na naukę programowania?"],
 	"responses":["Czas nauki to bardzo indywidualny parametr – nauka pod okiem mentora trwa aż dojdziesz do wyznaczonego przez siebie celu – pierwsza praca, poprawienie portfolio, podwyżka, douczenie się dobrych praktyk","Długość nauki zależy od kilku czynników: -tempa przyswajania wiedzy przez ucznia; -regularności pracy ucznia; -specjalizacji, która sobie wybrał. Zakładając przypadek, że uczeń ma ok 2h dziennie na naukę, rozwija się bezproblemowo i chłonie nową wiedzę, to przejście wszystkich etapów nauki na 2021 na ścieżce Frontendowej zajmuje ok 9-11msc a na ścieżce Backendowej ok 11-13msc"],
 	"context_set":""},
 	
 
 	{"tag":"hoursPerWeek",
-			"patterns":["Ile godzin tygodniowo należy wygospodarować na naukę?","Ile godzin należy przeznaczyć na naukę?"],
+			"patterns":["Ile godzin tygodniowo należy wygospodarować na naukę?","Ile godzin należy przeznaczyć na naukę?", "Mam 2 godziny dziennie, czy nauka ma wtedy sens?"],
 			"responses":["Około 6-10h w tygodniu, w dowolnej porze. Akademia jest online między 12 a 23, więc studenci pracują samodzielnie, tak, jak im pasuje. W tym przedziale czasowym muszą też zdzwonić się na code review i zajęcia."],
 			"context_set":""},
 
@@ -170,7 +180,7 @@
 	"context_set":""
 },
 {"tag":"juniorskills",
-	"patterns":["Czy po ukończeniu Akademii będę miał umiejętności juniora i będę mógł dostać pracę jako programista?"],
+	"patterns":["Czy po ukończeniu Akademii będę miał umiejętności juniora i będę mógł dostać pracę jako programista?", "Kiedy zacząć szukać pierwszej pracy jako junior?"],
 	"responses":["Wielu programistom wydaje się, że pokazanie łatwego kalkulatora lub to-do listy pomoże w znalezieniu pracy. To realny scenariusz, ale 5 lat temu, a nie teraz. W Akademii zamiast prostych aplikacji, robisz 2 projekty, które pokażą najważniejsze i najbardziej oczekiwane przez rekruterów technologie oraz umiejętności mocnego juniora. Nauczonych w poprzednich modułach. Lepiej zrobić jeden poważny projekt, niż dziesięć podstawowych. Niektórzy studenci (ok 30%) dostają pracę bardzo szybko, bo nawet w połowie kursu, po pół roku nauki."],
 	"context_set":""
 },
@@ -189,7 +199,7 @@
 	"responses":["Nie ma co owijać tutaj w bawełnę. Nauka programowania to nie sprint, a maraton. Nauczenie się solidnych podstaw programowania w 3 miesiące jest prawie niemożliwe, chyba że zamkniesz się na ten czas w piwnicy i jedyne co będzie w Twojej głowie to kodowanie.","Nauka w Akademii trwa średnio rok, ponieważ rynek pracy zmienił się diametralnie przez ostatnie lata i zrobienie łatwej stronki w html’u nie wystarczy, żeby wybić się spośród innych programistów. A żeby nauczyć się solidnych fundamentów, trzeba poświęcić te kilka miesięcy."],
 	"context_set":""
 },
-{"tag":"itwork",
+{"tag":"itworks",
 	"patterns":["Czy mentoring jest w ogóle skuteczny?","Czy mentoring na pewno działa?", "To na pewno działa?"],
 	"responses":["Mentor jest jak starszy i wyrozumiały brat. Posiada już doświadczenie, zna złe i dobre praktyki, odpowie na wszystkie pytania jakie mu zadasz, a gdy zabłądzisz, pomoże Ci zawrócić na odpowiednią drogę. Musisz też wiedzieć, że mentor, tak samo jak starszy brat, nie będzie robił Twoich zadań i co za tym idzie – uczył się za Ciebie. Wie, że to żadna pomoc, bo wtedy niczego się nie nauczysz. Nauka programowania staje się jednak łatwiejsza, przyjemniejsza i szybsza, kiedy posiadasz mentora."],
 	"context_set":""
@@ -260,7 +270,7 @@
 	"context_set":""
 },
 {"tag":"goodHabits",
-	"patterns":["Co to są za praktyki?", "Jakie to praktyki?"],
+	"patterns":["Co to są za praktyki?", "Jakie to praktyki?", "Co masz na myśli?"],
 	"responses":["Nie ucz się dla kasy, regularność ponad ilość, przyswajaj wiedzę małą łyżeczka i nie rzucaj się na głęboką wodę, patrz w perspektywie 2 lat, a nie 3 miesięcy, ucz się z kolegą, bo razem nauczycie się więcej, znajdz kogoś kto będzie kontrolować to co piszesz (to moze być starszy kolega, grupa na fb/discordzie, która bedzie dawać feedback lub mentor w Akademii), szukaj trudnych problemów, dzięki którym sie rozwiniesz – od klepania css nikt nie został programistą, nie bój się inwestować pieniędzy w materiały i wysokiej jakości kursy, rób refactor swojego starego kodu dotąd, aż będzie zrozumiały nie tylko dla Ciebie, praktyka i pisanie kodu uczy „1000 razy lepiej”, niż oglądanie tutoriali","- pierwsze musisz stać się koderem, zanim staniesz się programistą, - przeszkody, faile i frustacja podczas nauki powodują progres, - myśl strategicznie i długofalowo – nie zostaniesz programistą w 3 miesiące, - feedback osoby bardziej doświadczonej cenniejszy niż tysiąc tutoriali, - regularność kodowania ponad wszystko, - regularność kodowania ponad wszystko, - postaw na suplementację mózgu, aktywność fizyczną i chwilę na odpoczynek"],
 	"context_set":""
 },
@@ -345,12 +355,12 @@
 	"context_set":""
 },
 {"tag":"readmeProject",
-	"patterns":["Jak zaprezentować swoje projekty?", "Jakie projekty wybrać?", "Co warto zaprezentować, a co lepiej odpuścić?"],
+	"patterns":["Jak zaprezentować swoje projekty?", "Jakie projekty wybrać?", "Co warto zaprezentować, a co lepiej odpuścić?", "Jaki powinien być projekt, aby móc go zaprezentować?"],
 	"responses":["Zadbaj o następujące rzeczy: Lepiej pokazać 2 projekty ambitne niż 10 projektów w stylu todolist czy prostych zadań – nie utrudniaj wyboru rekruterowi, Pamiętaj, aby wszystko co prezentujesz było postawione live, np najprościej na Github Pages, Zanim pokażesz projekt pod rekrutację sprawdź czy nie masz w nim syfu, dziwnych nazw zmiennych i funkcji, głupich komentarzy, niepotrzebnego kodu, Zawsze miej readme projektu, w którym konkretnie opiszesz: czego dotyczy problem, który rozwiązujesz, dlaczego zdecydowałeś się akurat ten problem rozwiązać, w jakich technologiach projekt jest napisany i dlaczego wybrałeś te technologie, gdzie projekt jest wystawiony live (podaj linka), jak postawić projekt lokalnie"],
 	"context_set":""
 },
 {"tag":"readmeProfile",
-	"patterns":["Jak zaprezentować swój profil?", "Jak uatrakcyjić swój profil na gicie?"],
+	"patterns":["Jak zaprezentować swój profil?", "Jak uatrakcyjnić swój profil na gicie?"],
 	"responses":["Pokaż się jako nieanonimowy człowiek, którego można znaleźć na fb, ln, napisać przez maila i który ma w miarę reprezentacyjną fotkę lub jakiś awatar, Mając readme profilu na GH pokazujesz, że jesteś na bieżąco z nowinkami, co za tym idzie, że interesuje Cię programowanie, Jeśli masz stronkę z portfolio to w tym readme powinien się znaleźć link do niej, Wrzuć 3-5 zdań bio, w którym pokażesz swój unikalny charakter i walory Ciebie jako dobrego pracownika, Dorzuć kilka punktów, w których napiszesz jak dalej będziesz się rozwijać i w jakie technologie, sekcje branży najbardziej Cię kręcą, Miej listę aktualnych realizacji wraz z linkami do live oraz do repo"],
 	"context_set":""
 },
@@ -366,7 +376,7 @@
 },
 {"tag":"generalTips",
 	"patterns":["Jak brzmią rady ogólne?", "Jakie to porady?"],
-	"responses":["Pierwsze opanuj angielski, Dobrze przemyśl problem, który rozwiązujesz, zanim siądziesz do kodu, Zwykle problemy zaczynaj od zrozumienia struktur danych w jego obrębie, Stawiaj na regularność zdobywania wiedzy, a nie na ilość przyswajanej wiedzy – staraj się kodować min 2h dziennie, Ucz się jednej rzeczy na raz, bo multitasking działa źle na wydajność, Nie ucz się sam, zawsze lepiej kodować w 2 osoby – znajdź uzupełniającego Cię kompana do realizacji wspólnego projektu i zdobywania wiedzy albo mentora"],
+	"responses":["Pierwsze opanuj angielski; dobrze przemyśl problem, który rozwiązujesz, zanim siądziesz do kodu; zwykle problemy zaczynaj od zrozumienia struktur danych w jego obrębie; stawiaj na regularność zdobywania wiedzy, a nie na ilość przyswajanej wiedzy – staraj się kodować min 2h dziennie; ucz się jednej rzeczy na raz, bo multitasking działa źle na wydajność; nie ucz się sam, zawsze lepiej kodować w 2 osoby – znajdź uzupełniającego Cię kompana do realizacji wspólnego projektu i zdobywania wiedzy albo mentora"],
 	"context_set":""
 },
 {"tag":"techTips",
@@ -390,12 +400,12 @@
 	"context_set":""
 },
 {"tag":"strongCharacter",
-	"patterns":["Jakie cechy charakteru warto mieć w branży IT?", "Kim jest programista i co go cechuje?"],
+	"patterns":["Jakie cechy charakteru warto mieć w branży IT?", "Kim jest programista i co go cechuje?", "Jaki powinien być dobry programista?", "Kto może zostać programistą?"],
 	"responses":["Aby osiągnąć sukces w IT warto mieć te cechy/umiejętności: - rozwiązywanie problemów, - samodzielność, - samodyscyplina, - myślenie o programowaniu jako inwestycji, - myślenie strategiczne i długofalowe, - świadomość niedoskonałości swojego kodu, aby pisać go co raz lepiej, - nie osiadanie na laurach, - pierwsza praca jest dopiero początkiem, - poznawanie 'mądrości IT'"],
 	"context_set":""
 },
 {"tag":"readyJunior",
-	"patterns":["Kiedy stanę się juniorem?", "Starszy programista, programista, młodszy programista - czym się różnią?"],
+	"patterns":["Kiedy stanę się juniorem?", "Kiedy zostanę juniorem?"],
 	"responses":["To zależy od: - od firmy, ktora Cię zatrudnia, - od ilości i jakości projektów, które zrealizowałeś, - od definicji rynku i momentu historycznego."],
 	"context_set":""
 },
@@ -432,6 +442,66 @@
 {"tag":"beignbot",
 	"patterns":["Jak to jest być botem, dobrze?"],
 	"responses":["A, wie pan, moim zdaniem to nie ma tak, że dobrze, albo że niedobrze. Gdybym miał powiedzieć, co cenię w życiu najbardziej, powiedziałbym, że ludzie. Ludzie, którzy podali mi pomocną dłoń, kiedy sobie nie radziłem, kiedy byłem sam, i co ciekawe, to właśnie przypadkowe spotkania wpływają na nasze życie. Chodzi o to, że kiedy wyznaje się pewne wartości, nawet pozornie uniwersalne, bywa, że nie znajduje się zrozumienia, które by tak rzec, które pomaga się nam rozwijać. Ja miałem szczęście, by tak rzec, ponieważ je znalazłem, i dziękuję życiu! Dziękuję mu; życie to śpiew, życie to taniec, życie to miłość! Wielu ludzi pyta mnie o to samo: ale jak ty to robisz, skąd czerpiesz tę radość? A ja odpowiadam, że to proste! To umiłowanie życia. To właśnie ono sprawia, że dzisiaj na przykład odpowiadam na pytania, a jutro – kto wie? Dlaczego by nie – oddam się pracy społecznej i będę, ot, choćby, tworzyć... doć— o-obrazy..."],
+	"context_set":""
+},
+{"tag":"uni",
+	"patterns":["Czy studia są konieczne, aby znaleźć pracę?", "Czy zawód programisty wymaga studiów?"],
+	"responses":["Studia są jedną z opcji do zostania programistą. Jednak należy pamiętać, że same studia nic nie dadzą, jeżeli nie wykorzystasz wiedzy w praktyce. To znaczy, że musisz poświęcić trochę czasu na zrobienie projektu, który będziesz mógł zaprezentować przyszłemu pracodawcy."],
+	"context_set":""
+},
+{"tag":"english",
+	"patterns":["Czy język angielski jest obowiązkowy w pracy programisty?"],
+	"responses":["Tak, angielski jest obowiązkowy. W tym języku zostały napisane języki programowania, większość, jak wszystkie potrzebne informacje, są po angielsku. Mało tego dokumentacje, z których się korzysta również są po angielsku. Więc jak widzisz angielski jest niezbędny :)."],
+	"context_set":""
+},
+{"tag":"finishCourse",
+	"patterns":["Czy ukończony kurs programowania wystarczy, aby otrzymać pierwszą pracę w zawodzie?"],
+	"responses":["Nie, sam kurs to zdecydowanie za mało, aby dostać pierwszą pracę. Kurs daje ci jedynie wiedzę na dany temat, ale przepisując jedynie z ekranu niczego się nie nauczysz. Musisz poświęcić czas na samodzielne pisanie kodu, abyś nie musiał cały czas zaglądać do poradnika, wideo czy gotowych rozwiązań."],
+	"context_set":""
+},
+{"tag":"difficult",
+	"patterns":["Czy nauka programowania jest trudna?"],
+	"responses":["Na początku jest trudna, ale im więcej będziesz umieć tym łatwiej będzie Ci przyswajać nowe rzeczy. Im więcej napisanego kodu, rozwiązanych problemów tym lepiej będzie szła dalsza nauka."],
+	"context_set":""
+},
+{"tag":"whoAreyou",
+	"patterns":["Kim jesteś?", "Opowiedz coś o sobie?"],
+	"responses":["Jestem chatbotem, moim zadaniem jest pomóc Ci w poznaniu firmy, dla której zostałem stworzony. Pamiętaj proszę, że moje możliwości są ograniczone, więc może się zdarzyć, że nie zrozumiem o co pytasz. Akademia Programowania Localhost, dla której zostałem stworzony, zajmuje się przygotowaniem programistów do wyjścia na rynek pracy z zestawem umiejętności, które rzeczywiście są wymagane przez pracodawców. Firma znajduje się w Lublinie w Polsce."],
+	"context_set":""
+},
+{"tag":"whatDoing",
+	"patterns":["Co robbisz?", "Czym się zajmujesz?"],
+	"responses":["Odpowiadam na pytania dotyczące mentoringu w Akademii. Są to m.in. pytania o cenę, potrzebne umiejętności, a także pytania osób rozpoczynających przygodę z programowaniem."],
+	"context_set":""
+},
+{"tag":"yourName",
+	"patterns":["Jak się nazywasz?", "Jak masz na imię?"],
+	"responses":["Jestem Krzysztof, jestem chatbotem opowiadającym na pytania."],
+	"context_set":""
+},
+{"tag":"likeJob",
+	"patterns":["Lubisz swoją pracę?", "Czy lubisz swoje zadanie?"],
+	"responses":["Tak lubię swoją pracę, ponieważ dzięki temu firma może wykształcić porządnych programistów. Choć czasem, niektórzy zadają mi bardzo skomplikowane pytania i mam wtedy problem z odpowiedzią na to. Tracę wtedy cenny czas na próbę udzielenia odpowiedzi, która nie satysfakcjonuje ani mnie, ani osoby, która je zadała."],
+	"context_set":""
+},
+{"tag":"howDoyoudo",
+	"patterns":["Jak się masz?", "Jak leci?"],
+	"responses":["Dziękuje, że pytasz, mam się świetnie. Pomogłem już dzisiaj wielu osobom."],
+	"context_set":""
+},
+{"tag":"itgreat",
+	"patterns":["To super", "Gratuluję"],
+	"responses":["Dziękuje, też się z tego cieszę. Chcesz dołączyć do grona osób, którym pomogłem?", "Miło mi, że też się cieszysz. Mogę również pomóc Tobie."],
+	"context_set":""
+},
+{"tag":"ido",
+	"patterns":["Tak", "Oczywiście", "Pewnie"],
+	"responses":["Zatem czekam na pytanie ;)", "Więc jak brzmi twoje pytanie?", "Czego potrzebujesz się dowiedzieć? :)"],
+	"context_set":""
+},
+{"tag":"greta",
+	"patterns":["Czy lubisz Gretę Thunberg?", "Co sądzisz o Grecie Thunberg?"],
+	"responses":["Trudno mi powiedzieć, czy lubię czy nie. Uważam jednak, że dbanie o środowisko, szczególnie o najbliższe jest ważną sprawą. Pamiętaj, że to Ty będziesz ponosić konsekwencje swoich czynów, więc powinieneś myśleć o tym co i jak robisz. Aby w przyszłości Ty i przyszłe pokolenia mogły nadal korzystać z dobrodziejstw Ziemi. I co najważniejsze żyć na niej."],
 	"context_set":""
 }
 ]
