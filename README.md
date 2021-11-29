@@ -1,5 +1,5 @@
 # chatbot-flask 
-- Chatbot, który tu widzicie jest wykorzystany do funkcji konsultanta. Jego zadaniem jest odpowidać na najczęściej zadawane pytania przez użytkowników witryny.
+- Chatbot, który tu widzicie jest wykorzystany jako konsultant. Jego zadaniem jest odpowidać na najczęściej zadawane pytania przez użytkowników witryny.
 - Projekt ten zaczęłam na stażu studenckim, jednak po jego zakończeniu, podęłam się dalszej pracy botem. Dzięki temu poznałam możliwości sekwencyjnych sieci neuronowych, poza standardowymi
 klasyfikacjami recenzji filmów, wpisów na twiterze czy spam-maili. 
 - Chatbot pisany jest w Pythonie oraz JS. 
@@ -12,4 +12,4 @@ wybierz pilk -> chatBot_flask_testowa.ipynb -> kliknij "Open in Colab" -> urucho
 
 UWAGA: * Running on http://2e6d-34-125-78-31.ngrok.io - ten link będzie się zmieniał po każdym uruchomieniu komórki, z której wywoływany jest flask.
 
-- wersja live wkrótce będzie dostępna
+
